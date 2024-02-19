@@ -1,4 +1,3 @@
-Certainly! Below is a more polished and formatted version of the README file for your Stock Price Comparison project:
 
 ---
 
