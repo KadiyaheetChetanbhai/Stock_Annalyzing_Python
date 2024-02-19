@@ -23,7 +23,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/KadiyaheetChetanbhai/stock-price-comparison.git
+git clone https://github.com/KadiyaheetChetanbhai/Stock_Annalyzing_Python.git
 Install dependencies:
 
 bash
