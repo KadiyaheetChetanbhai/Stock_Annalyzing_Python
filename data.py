@@ -31,10 +31,10 @@ def calculate_dtw_distance(series1, series2):
 
 # Define the time frame (8 weeks)
 end_date = pd.to_datetime('2024-02-15')
-start_date = end_date - pd.DateOffset(weeks=8)
+start_date = end_date - pd.DateOffset(weeks=2)
 
 # Fetch historical data for Apple (AAPL), Microsoft (MSFT), Google (GOOGL), and Amazon (AMZN)
-stocks_to_compare = ['IREDA.NS', 'RVNL.NS', 'ITC.NS', 'RELIANCE.NS']
+stocks_to_compare = ['IREDA.NS', 'RVNL.NS', 'ITC.NS', 'RELIANCE.NS', 'TCS.NS','JIOFIN.NS','CYIENTDLM.NS','LICI.NS','UTKARSHBNK.NS','MANKIND.NS','PDSL.NS','SUNPHARMA.NS','TATASTEEL.NS','TATAMOTORS.NS','TATAPOWER.NS','TATAELXSI.NS','TATACONSUM.NS']
 stock_data_compare = {}
 
 for stock_ticker in stocks_to_compare:
@@ -44,7 +44,7 @@ for stock_ticker in stocks_to_compare:
         stock_data_compare[stock_ticker]['Normalized_Close'] = robust_normalize(stock_data['Close'])
 
 # Fetch historical data for the stock to be compared (replace 'FB' with 'NVDA' for example)
-compare_stock_ticker = 'VBL.NS'
+compare_stock_ticker = 'RVNL.NS'
 stock_data_compare_stock = fetch_stock_data(compare_stock_ticker, start_date, end_date)
 
 if stock_data_compare_stock is not None:
@@ -79,7 +79,7 @@ if stock_data_compare_stock is not None:
     print(f"The most similar stock to {compare_stock_ticker} is {most_similar_stock}")
 
     # Plotting
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(20, 10))
     plt.subplot(2, 1, 1)
     plt.plot(stock_data_compare_stock.index, normalized_compare_stock, label=compare_stock_ticker)
     plt.plot(stock_data_compare[most_similar_stock].index, stock_data_compare[most_similar_stock]['Normalized_Close'], label=most_similar_stock)
