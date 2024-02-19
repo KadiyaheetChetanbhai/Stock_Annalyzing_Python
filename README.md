@@ -32,14 +32,6 @@ pip install -r requirements.txt
 Usage
 Configuration:
 
-Modify the stocks_to_compare list in the stock_comparison.py script to include the stock tickers you want to compare.
-Run the script:
-
-bash
-Copy code
-python stock_comparison.py
-View Results:
-
 The script will fetch historical stock data, perform clustering, and visualize the comparison results.
 Contributors
 Your Name
