@@ -51,7 +51,6 @@ This project aims to provide a comprehensive comparison of historical stock pric
 
 ## Contributors
 
-- Your Name
 - Heet Kadiya
 
 ## Acknowledgements
@@ -63,7 +62,7 @@ This project aims to provide a comprehensive comparison of historical stock pric
 
 For questions or suggestions, please feel free to contact the project maintainers:
 
-- Your Name: Heet Kadiya
+- Name: Heet Kadiya
 - Contributor 1: heetkadiya04@gmail.com
 
 --- 
